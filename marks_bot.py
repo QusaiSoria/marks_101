@@ -334,11 +334,11 @@ def cancel(update: Update, context: CallbackContext) -> int:
     update.message.reply_text('تم إلغاء العملية.')
     return ConversationHandler.END
 
-def periodic_task(context: CallbackContext):
-    """Task to be executed periodically."""
+#def periodic_task(context: CallbackContext):
+#    """Task to be executed periodically."""
     # Create a fake Update object to simulate the /contact command
-    update = Update(update_id=0, message=context.bot.send_message(chat_id=os.environ.get('CHAT_ID'), text='/contact'))
-    contact(update, context)
+#    update = Update(update_id=0, message=context.bot.send_message(chat_id=os.environ.get('CHAT_ID'), text='/contact'))
+#    contact(update, context)
 
 # Flask app for keeping Render happy
 #app = Flask('')
