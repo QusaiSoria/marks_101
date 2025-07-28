@@ -379,10 +379,10 @@ def main():
     dp.add_handler(CommandHandler('contact', contact))
     
     # Get the job queue
-    job_queue = updater.job_queue
+    #job_queue = updater.job_queue
 
     # Schedule the periodic task every 40 seconds
-    job_queue.run_repeating(periodic_task, interval=40, first=0)
+    #job_queue.run_repeating(periodic_task, interval=40, first=0)
 
     
     updater.start_polling()
