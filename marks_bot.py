@@ -341,18 +341,18 @@ def periodic_task(context: CallbackContext):
     contact(update, context)
 
 # Flask app for keeping Render happy
-app = Flask('')
+#app = Flask('')
 
-@app.route('/')
-def home():
-    return "I am alive"
+#@app.route('/')
+#def home():
+#    return "I am alive"
 
-def run():
-    app.run(host='0.0.0.0', port=8080)
+#def run():
+  #  app.run(host='0.0.0.0', port=8080)
 
-def keep_alive():
-    t = Thread(target=run)
-    t.start()
+#def keep_alive():
+#    t = Thread(target=run)
+  #  t.start()
 
 def main():
     """Start the bot."""
