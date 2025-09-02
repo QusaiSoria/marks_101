@@ -15,9 +15,9 @@ DEPARTMENT_ID, YEAR, SEASON = range(3)
 BASE_URL = 'https://damascusuniversity.edu.sy/ite/'
 
 # Get the Telegram bot token from the environment variable
-token = '7211468470:AAGCOqhw5MJjsLYyb1HZDr4NQQDu-6H5kSA'
-another_bot_token = '7445301702:AAHi3yqzGQIh4XXIQZSWyen1k_6QoddbUGw'
-another_bot_chat_id = 819385459
+token = os.environ.get('TELEGRAM_BOT_TOKEN')
+another_bot_token = os.environ.get('ANOTHER_BOT_TOKEN')
+another_bot_chat_id = os.environ.get('ANOTHER_BOT_CHAT_ID')
 
 # In-memory dictionary to track the number of times users clicked start
 user_start_count = {}
